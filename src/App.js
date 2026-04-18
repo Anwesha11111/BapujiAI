@@ -21,4 +21,11 @@ const [history, setHistory] = useState([]);
 useEffect(() => {
   axios.get('http://localhost:8000/history').then(res => setHistory(res.data));
 }, []);
+const API_URL = "https://bapujiai.onrender.com";  // Your Render URL
+
+// Chat
+const res = await axios.post(`${API_URL}/chat`, { query });
+
+// History
+axios.get(`${API_URL}/history`).then(res => setHistory(res.data));
 // Add <ul>{history.map(h => <li>Q: {h.query}<br/>{h.answer}</li>)}</ul>

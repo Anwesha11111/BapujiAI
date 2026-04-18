@@ -17,3 +17,8 @@ function App() {
     </div>
   );
 }
+const [history, setHistory] = useState([]);
+useEffect(() => {
+  axios.get('http://localhost:8000/history').then(res => setHistory(res.data));
+}, []);
+// Add <ul>{history.map(h => <li>Q: {h.query}<br/>{h.answer}</li>)}</ul>

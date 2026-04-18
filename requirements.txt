@@ -1,11 +1,6 @@
-fastapi==0.115.0
-uvicorn[standard]==0.30.6
-sentence-transformers==3.1.1
-faiss-cpu==1.13.2
-pymongo[srv]==4.8.0
-python-dotenv==1.0.1
-huggingface_hub==0.25.1
-pydantic==2.5.3  # Older: Prebuilt wheels, no Rust compile
-pydantic-core==2.14.6  # Compatible older version
-numpy==1.26.4
-requests==2.32.3
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pymongo[srv]==4.6.3
+requests==2.31.0
+python-dotenv==1.0.0
+pydantic==2.5.0

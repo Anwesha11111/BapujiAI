@@ -1,7 +1,10 @@
 fastapi==0.115.0
 uvicorn[standard]==0.30.6
 sentence-transformers==3.1.1
-faiss-cpu==1.8.0
-ollama==0.3.3
-pymongo==4.8.0
+faiss-cpu==1.13.2  # Latest stable (not 1.8.0)
+pymongo[srv]==4.8.0
 python-dotenv==1.0.1
+huggingface_hub==0.25.1
+pydantic==2.9.2
+numpy==1.26.4
+requests==2.32.3
